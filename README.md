@@ -2,10 +2,14 @@
 
 ## 必要な環境
 python3.x
+
 xarray
+
 pandas
+
 numpy
 
+kmt_data.txt：ESTOCの海陸を０と１で表現したテキストファイル
 
 ## 実行順
 
@@ -33,8 +37,9 @@ interp_freshwater.py
 
 ４）海陸ファイルの作成
 
-make_land_sea_mask.py　＞ERA5の海陸データをNCファイル形式で保存
-resample_lsm.py　＞　ESTOCのサイズに内挿計算
+make_land_sea_mask.py:ERA5の海陸データをNCファイル形式で保存
+
+resample_lsm.py:ESTOCのサイズに内挿計算(lsm_180x360.ncができる）
 
 ５）海陸マスクを作って穴埋め計算
 
